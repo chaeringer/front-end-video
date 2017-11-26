@@ -1,0 +1,24 @@
+<html>
+    <head>
+      <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+      <script src="https://ideaspacevr.github.io/aframe-particle-system-component/dist/aframe-particle-system-component.min.js"></script>
+    </head>
+    <body>
+      <a-scene>
+
+        <a-entity rotation="0 0 0" id="paLogo">
+          <a-animation attribute="position" from="0 5 0" to="0 0 0" dur="4000" easing="ease-out"></a-animation>
+          <a-box position="-1.5 0 -4" color="#fff" depth="0.2" height="1.05" width="0.05"></a-box>
+          <a-box position="1.5 0 -4" color="#fff" depth="0.2" height="1.05" width="0.05"></a-box>
+          <a-box position="0 -0.5 -4" color="#fff" rotation="0 0 90" depth="0.2" height="3" width="0.05"></a-box>
+          <a-box position="0 0.5 -4" color="#fff" rotation="0 0 90" depth="0.2" height="3" width="0.05"></a-box>
+          <a-entity position="5.164 -0.394 -4" scale="13 13 13" text="color:#FFFFFF;font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/montserrat/Montserrat-Bold.json;shader:msdf;value:Project A"></a-entity>
+        </a-entity>
+
+        <a-entity position="0 2.25 -9.875" particle-system="preset:snow;particleCount:5000"></a-entity>
+
+        <a-sky color="#222"></a-sky>
+
+      </a-scene>
+    </body>
+  </html>
